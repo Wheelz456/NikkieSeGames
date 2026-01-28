@@ -1,4 +1,3 @@
-
 export const GAMES = [
   {
     id: '1',

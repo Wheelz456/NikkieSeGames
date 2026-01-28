@@ -2,12 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Define interface for GameCard component props and use React.FC to support standard React props like 'key'
-interface GameCardProps {
-  game: any;
-}
-
-const GameCard: React.FC<GameCardProps> = ({ game }) => {
+// Added React.FC type to the component definition to ensure that React-specific props like 'key' are handled correctly when rendering in lists
+const GameCard: React.FC<{ game: any }> = ({ game }) => {
   return (
     <Link 
       to={`/game/${game.id}`}
@@ -27,13 +23,10 @@ const GameCard: React.FC<GameCardProps> = ({ game }) => {
       </div>
       
       <div className="p-4">
-        <div className="flex justify-between items-start mb-1">
-          <h3 className="text-lg font-bold text-slate-100 group-hover:text-indigo-400 transition-colors line-clamp-1">
-            {game.title}
-          </h3>
-        </div>
-        
-        <div className="flex items-center space-x-3 text-xs text-slate-400 font-medium uppercase tracking-wider">
+        <h3 className="text-lg font-bold text-slate-100 group-hover:text-indigo-400 transition-colors line-clamp-1">
+          {game.title}
+        </h3>
+        <div className="flex items-center space-x-3 text-xs text-slate-400 font-medium uppercase tracking-wider mt-2">
           <span className="bg-slate-700/50 px-2 py-0.5 rounded border border-slate-600">{game.category}</span>
           <span className="flex items-center space-x-1">
             <i className="fas fa-play text-[10px]"></i>

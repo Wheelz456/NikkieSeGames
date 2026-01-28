@@ -2,12 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Define the interface for Layout component props to fix children typing issues in App.tsx
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+// Added React.FC type with explicit children prop to satisfy TypeScript requirements when used as a wrapper in App.tsx
+const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <nav className="sticky top-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 px-4 py-3 sm:px-8">
@@ -50,27 +46,16 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <span className="text-xl font-bold text-white">NEXUSGAMES</span>
             </div>
             <p className="text-slate-400 max-w-sm mb-6">
-              The best destination for unblocked web games. High-speed performance, clean UI, and curated content for gamers worldwide.
+              The best destination for unblocked web games. High-speed performance, clean UI, and curated content.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:bg-slate-700 transition-all">
-                <i className="fab fa-discord"></i>
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-slate-400 hover:text-indigo-400 hover:bg-slate-700 transition-all">
-                <i className="fab fa-twitter"></i>
-              </a>
-            </div>
           </div>
-          
           <div>
             <h4 className="text-white font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-slate-400">
               <li><Link to="/" className="hover:text-indigo-400">Home</Link></li>
-              <li><a href="#" className="hover:text-indigo-400">Contact Us</a></li>
               <li><a href="#" className="hover:text-indigo-400">Privacy Policy</a></li>
             </ul>
           </div>
-
           <div>
             <h4 className="text-white font-bold mb-4">Categories</h4>
             <ul className="space-y-2 text-slate-400">
@@ -81,7 +66,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           </div>
         </div>
         <div className="max-w-7xl mx-auto border-t border-slate-800 mt-12 pt-8 text-center text-slate-500 text-sm">
-          &copy; {new Date().getFullYear()} Nexus Games Portal. All rights reserved.
+          &copy; {new Date().getFullYear()} Nexus Games Portal.
         </div>
       </footer>
     </div>

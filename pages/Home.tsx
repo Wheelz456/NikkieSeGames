@@ -1,4 +1,3 @@
-
 import React, { useState, useMemo } from 'react';
 import { GAMES } from '../data/games';
 import GameCard from '../components/GameCard';
@@ -26,9 +25,8 @@ const Home = () => {
             UNLEASH THE <span className="text-indigo-200 underline decoration-indigo-300">GAMER</span> WITHIN
           </h1>
           <p className="text-indigo-100 text-lg md:text-xl mb-8 font-medium">
-            Explore thousands of unblocked games. No downloads, no lag, just pure gaming fun.
+            Explore thousands of unblocked games.
           </p>
-          
           <div className="w-full max-w-xl relative group">
             <i className="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 group-focus-within:text-indigo-600 transition-colors"></i>
             <input 
@@ -42,45 +40,33 @@ const Home = () => {
         </div>
       </section>
 
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
-        <div className="flex items-center space-x-2 overflow-x-auto pb-2 md:pb-0 scrollbar-hide">
-          {CATEGORIES.map(cat => (
-            <button
-              key={cat}
-              onClick={() => setSelectedCategory(cat)}
-              className={`px-6 py-2 rounded-xl text-sm font-bold transition-all whitespace-nowrap border-2 ${
-                selectedCategory === cat 
-                ? 'bg-indigo-600 border-indigo-600 text-white shadow-lg shadow-indigo-600/20' 
-                : 'bg-slate-800 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700'
-              }`}
-            >
-              {cat}
-            </button>
-          ))}
-        </div>
+      <div className="flex items-center space-x-2 overflow-x-auto pb-4 mb-8 scrollbar-hide">
+        {CATEGORIES.map(cat => (
+          <button
+            key={cat}
+            onClick={() => setSelectedCategory(cat)}
+            className={`px-6 py-2 rounded-xl text-sm font-bold transition-all whitespace-nowrap border-2 ${
+              selectedCategory === cat 
+              ? 'bg-indigo-600 border-indigo-600 text-white shadow-lg shadow-indigo-600/20' 
+              : 'bg-slate-800 border-slate-800 text-slate-400 hover:text-white hover:border-slate-700'
+            }`}
+          >
+            {cat}
+          </button>
+        ))}
       </div>
 
-      <div className="mb-12">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-black text-white flex items-center space-x-3">
-            <span className="w-2 h-8 bg-indigo-500 rounded-full"></span>
-            <span>{selectedCategory} Games</span>
-          </h2>
-          <span className="text-slate-500 text-sm font-semibold uppercase tracking-widest">{filteredGames.length} Games Found</span>
-        </div>
-
-        {filteredGames.length > 0 ? (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {filteredGames.map(game => (
-              <GameCard key={game.id} game={game} />
-            ))}
-          </div>
-        ) : (
-          <div className="flex flex-col items-center justify-center py-20 bg-slate-800/30 rounded-3xl border-2 border-dashed border-slate-700">
-            <h3 className="text-xl font-bold text-white mb-2">No games found</h3>
-          </div>
-        )}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        {filteredGames.map(game => (
+          <GameCard key={game.id} game={game} />
+        ))}
       </div>
+      
+      {filteredGames.length === 0 && (
+        <div className="py-20 text-center text-slate-400">
+          No games found matching your search.
+        </div>
+      )}
     </div>
   );
 };
