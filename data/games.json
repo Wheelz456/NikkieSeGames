@@ -7,17 +7,17 @@
     "rating": 4.8,
     "url": "https://play2048.co/",
     "thumbnail": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=800",
-    "description": "Combine the tiles to reach 2048! This addictive puzzle game requires strategic planning and quick thinking to clear the board. Use arrow keys or swipe to move tiles. When two tiles with the same number touch, they merge into one!"
+    "description": "The addictive puzzle game where you combine numbered tiles to reach 2048! Strategize your moves to keep the board from filling up."
   },
   {
     "id": "2",
     "title": "Hextris",
     "category": "Arcade",
-    "plays": "900K",
+    "plays": "950K",
     "rating": 4.5,
     "url": "https://hextris.io/",
     "thumbnail": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
-    "description": "A fast-paced hexagonal version of a classic block-stacking game. Rotate the hexagon to catch falling blocks and match colors to clear lines. Don't let the blocks stack past the outer gray boundary!"
+    "description": "A fast-paced hexagonal version of tetris. Rotate the hexagon to capture falling blocks and match colors to clear lines."
   },
   {
     "id": "3",
@@ -27,17 +27,17 @@
     "rating": 4.7,
     "url": "https://www.google.com/logos/2010/pacman10-i.html",
     "thumbnail": "https://images.unsplash.com/photo-1553481199-65650050cd3e?auto=format&fit=crop&q=80&w=800",
-    "description": "The definitive snake experience brought into the modern era. Slither through the arena, eat apples to grow longer, and avoid hitting walls or your own tail. It's a test of reflexes and spatial awareness."
+    "description": "The definitive snake experience brought into the modern era. Eat to grow longer, but avoid hitting walls or your own tail."
   },
   {
     "id": "4",
     "title": "Retro Maze",
     "category": "Arcade",
-    "plays": "12M",
+    "plays": "12.5M",
     "rating": 4.9,
     "url": "https://www.google.com/logos/2010/pacman10-i.html",
     "thumbnail": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800",
-    "description": "Step back in time with this legendary maze arcade game. Navigate through the neon corridors, gobble up pellets, and avoid the colorful ghosts. Grab power pellets to turn the tables and rack up high scores."
+    "description": "Step back in time with this legendary maze arcade game. Gobble pellets, dodge ghosts, and aim for the high score."
   },
   {
     "id": "5",
@@ -47,36 +47,16 @@
     "rating": 4.6,
     "url": "https://lichess.org/export",
     "thumbnail": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=800",
-    "description": "Sharpen your mind with the ultimate game of strategy. Play against an advanced engine or invite a friend for a local match. Features multiple difficulty levels and a clean, distraction-free interface."
+    "description": "Sharpen your mind with the ultimate game of strategy. Play against advanced engines or challenge your friends."
   },
   {
     "id": "6",
     "title": "Flappy Bird",
     "category": "Action",
     "plays": "3.2M",
-    "rating": 4.4,
+    "rating": 4.3,
     "url": "https://flappybird.io/",
     "thumbnail": "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&q=80&w=800",
-    "description": "Tap to flap your wings and navigate through the gaps in the green pipes. It sounds simple, but it's notoriously difficult. How many pipes can you clear before you crash?"
-  },
-  {
-    "id": "7",
-    "title": "Doodle Jump",
-    "category": "Arcade",
-    "plays": "1.8M",
-    "rating": 4.6,
-    "url": "https://doodlejump.io/",
-    "thumbnail": "https://images.unsplash.com/photo-1551817958-c1995896c2c3?auto=format&fit=crop&q=80&w=800",
-    "description": "Jump from platform to platform in this endless vertical climber. Use power-ups like jetpacks and propeller hats to reach new heights, but watch out for monsters and black holes!"
-  },
-  {
-    "id": "8",
-    "title": "Paper.io 2",
-    "category": "Strategy",
-    "plays": "8.9M",
-    "rating": 4.7,
-    "url": "https://paper-io.com/",
-    "thumbnail": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=800",
-    "description": "Capture as much territory as possible in this competitive multiplayer game. Draw loops to claim land, but be careful—if another player crosses your tail before you close the loop, it's game over!"
+    "description": "Navigate the bird through the green pipes in this notoriously difficult classic. One hit and it's game over!"
   }
 ]

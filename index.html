@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NexusPlay | Unblocked Premium Gaming</title>
+  <title>NEXUS | Unblocked Gaming</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -17,46 +17,68 @@
       overflow-x: hidden;
     }
 
-    #root {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: #050505; }
-    ::-webkit-scrollbar-thumb { background: #1e1e1e; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb { background: #1a1a1a; border-radius: 10px; }
     ::-webkit-scrollbar-thumb:hover { background: #4f46e5; }
 
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
+    .view-transition {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.4s ease-out, transform 0.4s ease-out;
     }
-    .animate-in { animation: fadeIn 0.5s ease-out forwards; }
+    .view-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.03);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
   </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://esm.sh/react@19.0.0",
-    "react-dom": "https://esm.sh/react-dom@19.0.0",
-    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "react-router-dom": "https://esm.sh/react-router-dom@6.28.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
-  }
-}
-</script>
 </head>
-<body>
-  <div id="root">
-    <div style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #050505; color: #4f46e5;">
-      <div style="width: 40px; height: 40px; border: 3px solid rgba(79, 70, 229, 0.2); border-top-color: #4f46e5; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 20px;"></div>
-      <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
-      <span style="font-weight: 900; letter-spacing: 0.3em; text-transform: uppercase; font-size: 12px;">Initializing Nexus...</span>
-    </div>
+<body class="bg-[#050505]">
+  <div id="app">
+    <!-- Navbar (Static) -->
+    <nav class="sticky top-0 z-[100] bg-[#050505]/80 backdrop-blur-2xl border-b border-white/5 py-5 px-6">
+      <div class="max-w-screen-2xl mx-auto flex items-center justify-between">
+        <a href="#/" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-600/30">
+            <i class="fas fa-bolt text-white"></i>
+          </div>
+          <span class="text-xl font-black tracking-tighter uppercase italic">
+            NEXUS<span class="text-indigo-500">PLAY</span>
+          </span>
+        </a>
+        <div class="hidden md:flex items-center gap-10 text-[10px] font-black text-white/40 uppercase tracking-[0.25em]">
+          <a href="#/" class="hover:text-white transition-colors">Portal</a>
+          <a href="#" class="hover:text-white transition-colors">Trending</a>
+          <a href="#" class="hover:text-white transition-colors">Discord</a>
+        </div>
+        <div id="nav-actions">
+           <button class="bg-white/5 border border-white/10 px-6 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-indigo-600 transition-all">
+            Community
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Content Area -->
+    <div id="view-container" class="view-transition"></div>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-white/5 bg-[#080808] text-center mt-20">
+      <div class="text-[10px] font-black text-white/10 uppercase tracking-[0.5em]">
+        © 2025 NEXUSPLAY NETWORK. HIGH-SPEED UNBLOCKED ACCESS.
+      </div>
+    </footer>
   </div>
+
   <script type="module" src="index.tsx"></script>
 </body>
 </html>
