@@ -1,1 +1,1 @@
-// App.tsx is the primary App component
+// Deprecated

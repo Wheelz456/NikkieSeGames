@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { fetchGames } from '../data/games.ts';
+import { fetchGames } from '../data/games';
 import GameCard from '../components/GameCard.tsx';
 
 const GameDetail = () => {

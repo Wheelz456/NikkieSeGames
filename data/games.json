@@ -1,83 +1,82 @@
-
 [
   {
     "id": "1",
-    "title": "2048",
-    "description": "Join the numbers and get to the 2048 tile! A classic addictive puzzle game where you slide tiles to combine them.",
-    "thumbnail": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://play2048.co/",
+    "title": "2048 Classic",
     "category": "Puzzle",
+    "plays": "2.1M",
     "rating": 4.8,
-    "plays": "1.2M"
+    "url": "https://play2048.co/",
+    "thumbnail": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=800",
+    "description": "Combine the tiles to reach 2048! This addictive puzzle game requires strategic planning and quick thinking to clear the board. Use arrow keys or swipe to move tiles. When two tiles with the same number touch, they merge into one!"
   },
   {
     "id": "2",
     "title": "Hextris",
-    "description": "A fast-paced puzzle game inspired by Tetris but on a hexagonal plane. Clear lines by rotating the hexagon.",
-    "thumbnail": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://hextris.io/",
     "category": "Arcade",
+    "plays": "900K",
     "rating": 4.5,
-    "plays": "850K"
+    "url": "https://hextris.io/",
+    "thumbnail": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800",
+    "description": "A fast-paced hexagonal version of a classic block-stacking game. Rotate the hexagon to catch falling blocks and match colors to clear lines. Don't let the blocks stack past the outer gray boundary!"
   },
   {
     "id": "3",
-    "title": "Flappy Bird",
-    "description": "The legendary game of frustration. Flap your way through the green pipes and try to beat your high score.",
-    "thumbnail": "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://flappybird.io/",
-    "category": "Arcade",
-    "rating": 4.2,
-    "plays": "2.5M"
+    "title": "Snake Royale",
+    "category": "Action",
+    "plays": "5.4M",
+    "rating": 4.7,
+    "url": "https://www.google.com/logos/2010/pacman10-i.html",
+    "thumbnail": "https://images.unsplash.com/photo-1553481199-65650050cd3e?auto=format&fit=crop&q=80&w=800",
+    "description": "The definitive snake experience brought into the modern era. Slither through the arena, eat apples to grow longer, and avoid hitting walls or your own tail. It's a test of reflexes and spatial awareness."
   },
   {
     "id": "4",
-    "title": "Snake Classic",
-    "description": "The original mobile game. Eat the apples, grow your tail, and whatever you do, don't hit the walls!",
-    "thumbnail": "https://images.unsplash.com/photo-1553481199-65650050cd3e?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://www.google.com/logos/2010/pacman10-i.html",
+    "title": "Retro Maze",
     "category": "Arcade",
-    "rating": 4.7,
-    "plays": "5M"
+    "plays": "12M",
+    "rating": 4.9,
+    "url": "https://www.google.com/logos/2010/pacman10-i.html",
+    "thumbnail": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800",
+    "description": "Step back in time with this legendary maze arcade game. Navigate through the neon corridors, gobble up pellets, and avoid the colorful ghosts. Grab power pellets to turn the tables and rack up high scores."
   },
   {
     "id": "5",
-    "title": "Pac-Man",
-    "description": "Waka waka! Navigate the maze, eat the dots, and avoid the ghosts in this timeless arcade masterpiece.",
-    "thumbnail": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://www.google.com/logos/2010/pacman10-i.html",
-    "category": "Arcade",
-    "rating": 4.9,
-    "plays": "15M"
+    "title": "Chess Master",
+    "category": "Strategy",
+    "plays": "150K",
+    "rating": 4.6,
+    "url": "https://lichess.org/export",
+    "thumbnail": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=800",
+    "description": "Sharpen your mind with the ultimate game of strategy. Play against an advanced engine or invite a friend for a local match. Features multiple difficulty levels and a clean, distraction-free interface."
   },
   {
     "id": "6",
-    "title": "Cookie Clicker",
-    "description": "Start with one cookie and build a baking empire. Hire grandmas, build factories, and click until your fingers hurt.",
-    "thumbnail": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://orteil.dashnet.org/cookieclicker/",
-    "category": "Strategy",
-    "rating": 4.9,
-    "plays": "10M+"
+    "title": "Flappy Bird",
+    "category": "Action",
+    "plays": "3.2M",
+    "rating": 4.4,
+    "url": "https://flappybird.io/",
+    "thumbnail": "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&q=80&w=800",
+    "description": "Tap to flap your wings and navigate through the gaps in the green pipes. It sounds simple, but it's notoriously difficult. How many pipes can you clear before you crash?"
   },
   {
     "id": "7",
-    "title": "Lichess",
-    "description": "Play chess against players worldwide or practice against the computer on one of the best free platforms.",
-    "thumbnail": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://lichess.org/export",
-    "category": "Strategy",
+    "title": "Doodle Jump",
+    "category": "Arcade",
+    "plays": "1.8M",
     "rating": 4.6,
-    "plays": "700K"
+    "url": "https://doodlejump.io/",
+    "thumbnail": "https://images.unsplash.com/photo-1551817958-c1995896c2c3?auto=format&fit=crop&q=80&w=800",
+    "description": "Jump from platform to platform in this endless vertical climber. Use power-ups like jetpacks and propeller hats to reach new heights, but watch out for monsters and black holes!"
   },
   {
     "id": "8",
-    "title": "Slope",
-    "description": "A high-speed neon runner where you control a ball rolling down a steep slope. Avoid obstacles and don't fall off!",
-    "thumbnail": "https://images.unsplash.com/photo-1614294149010-950b698f72c0?auto=format&fit=crop&q=80&w=400&h=300",
-    "url": "https://slopegame.online/",
-    "category": "Action",
+    "title": "Paper.io 2",
+    "category": "Strategy",
+    "plays": "8.9M",
     "rating": 4.7,
-    "plays": "3.2M"
+    "url": "https://paper-io.com/",
+    "thumbnail": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&q=80&w=800",
+    "description": "Capture as much territory as possible in this competitive multiplayer game. Draw loops to claim land, but be careful—if another player crosses your tail before you close the loop, it's game over!"
   }
 ]

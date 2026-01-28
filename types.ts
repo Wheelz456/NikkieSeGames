@@ -1,2 +1,1 @@
-
-// This file is no longer used in the JavaScript version.
+// This file is deprecated. Application is pure JavaScript.

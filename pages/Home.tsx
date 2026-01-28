@@ -1,5 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
-import { fetchGames } from '../data/games.ts';
+import { fetchGames } from '../data/games';
 import GameCard from '../components/GameCard.tsx';
 
 const CATEGORIES = ['All', 'Action', 'Puzzle', 'Arcade', 'Strategy'];

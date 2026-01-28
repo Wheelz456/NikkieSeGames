@@ -3,59 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nexus Games | Play Unblocked</title>
+  <title>NexusPlay | Unblocked Premium Gaming</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&display=swap');
+    
     body {
-      font-family: 'Inter', sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #050505;
+      color: #ffffff;
       margin: 0;
+      overflow-x: hidden;
     }
-    ::-webkit-scrollbar {
-      width: 8px;
+
+    #root {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-    ::-webkit-scrollbar-track {
-      background: #1e293b;
+
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: #050505; }
+    ::-webkit-scrollbar-thumb { background: #1e1e1e; border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover { background: #4f46e5; }
+
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
-    ::-webkit-scrollbar-thumb {
-      background: #334155;
-      border-radius: 4px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: #475569;
-    }
+    .animate-in { animation: fadeIn 0.5s ease-out forwards; }
   </style>
-<script type="importmap">
+  <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@19.0.0",
-    "react/": "https://esm.sh/react@19.0.0/",
     "react-dom": "https://esm.sh/react-dom@19.0.0",
     "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
-    "react-router-dom": "https://esm.sh/react-router-dom@7.1.5",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.28.0",
     "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
 </head>
 <body>
-  <div id="root"></div>
-  <script>
-    // Global error listener to catch module load failures
-    window.addEventListener('error', (event) => {
-      if (event.message.includes('import')) {
-        const root = document.getElementById('root');
-        root.innerHTML = `<div style="padding: 20px; color: #f87171;">
-          <h1 style="font-size: 24px; font-weight: bold;">Loading Error</h1>
-          <p style="margin-top: 10px;">The application failed to load a module. This is usually due to an import path issue.</p>
-          <pre style="background: #1e293b; padding: 15px; border-radius: 8px; margin-top: 10px; overflow: auto;">${event.message}</pre>
-        </div>`;
-      }
-    });
-  </script>
+  <div id="root">
+    <div style="height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #050505; color: #4f46e5;">
+      <div style="width: 40px; height: 40px; border: 3px solid rgba(79, 70, 229, 0.2); border-top-color: #4f46e5; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 20px;"></div>
+      <style>@keyframes spin { to { transform: rotate(360deg); } }</style>
+      <span style="font-weight: 900; letter-spacing: 0.3em; text-transform: uppercase; font-size: 12px;">Initializing Nexus...</span>
+    </div>
+  </div>
   <script type="module" src="index.tsx"></script>
 </body>
 </html>

@@ -1,1 +1,1 @@
-// index.tsx is the primary entry point
+// Deprecated
