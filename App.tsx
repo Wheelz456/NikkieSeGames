@@ -1,8 +1,8 @@
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import Home from './pages/Home';
-import GameDetail from './pages/GameDetail';
+import Layout from './components/Layout.tsx';
+import Home from './pages/Home.tsx';
+import GameDetail from './pages/GameDetail.tsx';
 
 const App = () => {
   return (

@@ -1,1 +1,1 @@
-// This file is disabled to avoid conflicts with index.tsx.
+// index.tsx is the primary entry point

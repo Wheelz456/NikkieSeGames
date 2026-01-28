@@ -1,0 +1,83 @@
+
+[
+  {
+    "id": "1",
+    "title": "2048",
+    "description": "Join the numbers and get to the 2048 tile! A classic addictive puzzle game where you slide tiles to combine them.",
+    "thumbnail": "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://play2048.co/",
+    "category": "Puzzle",
+    "rating": 4.8,
+    "plays": "1.2M"
+  },
+  {
+    "id": "2",
+    "title": "Hextris",
+    "description": "A fast-paced puzzle game inspired by Tetris but on a hexagonal plane. Clear lines by rotating the hexagon.",
+    "thumbnail": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://hextris.io/",
+    "category": "Arcade",
+    "rating": 4.5,
+    "plays": "850K"
+  },
+  {
+    "id": "3",
+    "title": "Flappy Bird",
+    "description": "The legendary game of frustration. Flap your way through the green pipes and try to beat your high score.",
+    "thumbnail": "https://images.unsplash.com/photo-1551103782-8ab07afd45c1?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://flappybird.io/",
+    "category": "Arcade",
+    "rating": 4.2,
+    "plays": "2.5M"
+  },
+  {
+    "id": "4",
+    "title": "Snake Classic",
+    "description": "The original mobile game. Eat the apples, grow your tail, and whatever you do, don't hit the walls!",
+    "thumbnail": "https://images.unsplash.com/photo-1553481199-65650050cd3e?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://www.google.com/logos/2010/pacman10-i.html",
+    "category": "Arcade",
+    "rating": 4.7,
+    "plays": "5M"
+  },
+  {
+    "id": "5",
+    "title": "Pac-Man",
+    "description": "Waka waka! Navigate the maze, eat the dots, and avoid the ghosts in this timeless arcade masterpiece.",
+    "thumbnail": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://www.google.com/logos/2010/pacman10-i.html",
+    "category": "Arcade",
+    "rating": 4.9,
+    "plays": "15M"
+  },
+  {
+    "id": "6",
+    "title": "Cookie Clicker",
+    "description": "Start with one cookie and build a baking empire. Hire grandmas, build factories, and click until your fingers hurt.",
+    "thumbnail": "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://orteil.dashnet.org/cookieclicker/",
+    "category": "Strategy",
+    "rating": 4.9,
+    "plays": "10M+"
+  },
+  {
+    "id": "7",
+    "title": "Lichess",
+    "description": "Play chess against players worldwide or practice against the computer on one of the best free platforms.",
+    "thumbnail": "https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://lichess.org/export",
+    "category": "Strategy",
+    "rating": 4.6,
+    "plays": "700K"
+  },
+  {
+    "id": "8",
+    "title": "Slope",
+    "description": "A high-speed neon runner where you control a ball rolling down a steep slope. Avoid obstacles and don't fall off!",
+    "thumbnail": "https://images.unsplash.com/photo-1614294149010-950b698f72c0?auto=format&fit=crop&q=80&w=400&h=300",
+    "url": "https://slopegame.online/",
+    "category": "Action",
+    "rating": 4.7,
+    "plays": "3.2M"
+  }
+]

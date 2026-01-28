@@ -1,1 +1,1 @@
-// This file is disabled to avoid conflicts with App.tsx.
+// App.tsx is the primary App component

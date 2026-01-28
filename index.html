@@ -31,16 +31,31 @@
 <script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
+    "react": "https://esm.sh/react@19.0.0",
+    "react/": "https://esm.sh/react@19.0.0/",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "react-router-dom": "https://esm.sh/react-router-dom@7.1.5",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
   }
 }
 </script>
 </head>
 <body>
   <div id="root"></div>
+  <script>
+    // Global error listener to catch module load failures
+    window.addEventListener('error', (event) => {
+      if (event.message.includes('import')) {
+        const root = document.getElementById('root');
+        root.innerHTML = `<div style="padding: 20px; color: #f87171;">
+          <h1 style="font-size: 24px; font-weight: bold;">Loading Error</h1>
+          <p style="margin-top: 10px;">The application failed to load a module. This is usually due to an import path issue.</p>
+          <pre style="background: #1e293b; padding: 15px; border-radius: 8px; margin-top: 10px; overflow: auto;">${event.message}</pre>
+        </div>`;
+      }
+    });
+  </script>
   <script type="module" src="index.tsx"></script>
 </body>
 </html>
